@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Yan He",
+      "authorEmail": "heyan12127@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}

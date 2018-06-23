@@ -1,0 +1,27 @@
+.app-root {
+  width: 100vw;
+  height: 100vh;
+
+  header {
+    height: 80px;
+    nav {
+      padding: 0 10px 0 10px;
+      a {
+        color: #1976D2;
+        text-decoration-line: none;
+      }
+      .active {
+        color: #2196F3;
+        font-weight: bold;
+      }
+    }
+  }
+
+  main {
+    height: calc(100% - 160px);
+  }
+
+  footer {
+    height: 80px;
+  }
+}
