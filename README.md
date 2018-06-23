@@ -13,7 +13,7 @@ npm install -g generator-ng4ts
 Then generate your new project:
 
 ```bash
-yo ng-4-ts
+yo ng4ts
 ```
 
 ## Getting To Know Yeoman
