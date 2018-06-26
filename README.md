@@ -1,4 +1,4 @@
-# generator-ng4ts [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# ng4ts | generator-ng4ts
 > 
 
 ## Installation
@@ -14,6 +14,27 @@ Then generate your new project:
 
 ```bash
 yo ng4ts
+```
+
+* To start the application just hit:
+
+```
+$ npm start
+```
+
+* To build the app run:
+
+```
+$ npm run build
+```
+
+## Available blueprints:
+
+```bash
+yo ng4ts:component [name]
+yo ng4ts:directive [name]
+yo ng4ts:filter [name]
+yo ng4ts:service [name]
 ```
 
 ## Getting To Know Yeoman

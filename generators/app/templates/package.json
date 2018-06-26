@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --devtool eval-source-map --progress --colors --hot --inline --content-base ./src",
-    "server": "node server.js",
-    "build": "webpack -p",
-    "build:test": "webpack --config webpack.test.copy.js -p"
+    "start": "node server.js",
+    "build": "webpack -p"
   },
   "author": "Yan He",
   "license": "MIT",
