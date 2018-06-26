@@ -19,6 +19,11 @@ module.exports = {
     filename: 'bundle.min.js',
     publicPath: '/'
   },
+  devServer: {
+    color: true,
+    watch: true,
+    hot: true
+  },
   resolve: {
     modules: [path.resolve(__dirname, 'src'), "node_modules"],
     extensions: ['.ts', '.js', '.json', '.scss', '.css']
