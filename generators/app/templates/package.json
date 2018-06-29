@@ -11,7 +11,7 @@
     "serve:dist": "browser-sync start --server dist --no-notify --files './dist/index.html, ./dist/*.js'"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/angular": "^1.6.47",
     "@types/angular-animate": "^1.5.10",

@@ -25,7 +25,16 @@ $ npm start
 * To build the app run:
 
 ```
+// just build
 $ npm run build
+
+// build and check run application
+$ npm run build:serve
+```
+
+* Just check run application after build:
+```
+$ npm run serve:dist
 ```
 
 ## Available blueprints:
