@@ -1,10 +1,9 @@
 import * as angular from 'angular';
-import uiRouter from '@uirouter/angularjs';
 
 import { AboutComponent } from './about.component';
 
 export const AboutModule = angular.module('about', [
-    uiRouter
+  'ui.router'
   ])
   .component('about', AboutComponent)
   .config($stateProvider => {
