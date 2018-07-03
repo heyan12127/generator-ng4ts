@@ -2,6 +2,8 @@
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
+const fs = require('fs');
+const path = require('path');
 
 module.exports = class extends Generator {
   prompting() {
@@ -24,11 +26,25 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copy(this.templatePath('!(_.*)'), this.destinationPath(`.`));
-    this.fs.copy(this.templatePath('src/'), this.destinationPath(`./src/`));
+    const rgx = /^_./;
+    fs.readdir(path.resolve(__dirname, 'templates'), (err, files) => {
+      if (err) {
+        console.log(`error:\n` + err);
+      }
+      files.forEach(file => {
+        if (rgx.test(file)) {
+          this.fs.copy(
+            this.templatePath(`${file}`),
+            this.destinationPath(`./${file.replace(rgx, '.')}`)
+          );
+        } else if (file !== '.DS_Store') {
+          this.fs.copy(this.templatePath(`${file}`), this.destinationPath(`./${file}`));
+        }
+      });
+    });
   }
 
   install() {
-    this.installDependencies();
+    this.npmInstall();
   }
 };

@@ -1,5 +1,5 @@
 {
-  "name": "webpack-test",
+  "name": "ng4ts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,8 +18,6 @@
     "@types/angular-cookies": "^1.4.5",
     "@types/angular-material": "^1.1.59",
     "@types/angular-resource": "^1.5.14",
-    "@types/angular-ui-router": "^1.1.40",
-    "@types/es6-promise": "^3.3.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
@@ -42,6 +40,7 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.18",
     "angular": "^1.7.2",
     "angular-animate": "^1.7.2",
     "angular-aria": "^1.7.2",
@@ -49,7 +48,6 @@
     "angular-material": "^1.1.10",
     "angular-messages": "^1.7.2",
     "angular-resource": "^1.7.2",
-    "angular-sanitize": "^1.7.2",
-    "angular-ui-router": "^1.0.18"
+    "angular-sanitize": "^1.7.2"
   }
 }

@@ -1,5 +1,5 @@
 import 'angular';
-import 'angular-ui-router';
+import '@uirouter/angularjs';
 import 'angular-aria';
 import 'angular-material';
 import 'angular-messages';
