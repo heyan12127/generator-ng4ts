@@ -37,10 +37,13 @@ module.exports = class extends Generator {
   }
 
   writing() {
+    const name = `${core.formatFileName(this.componentName).replace('/component/g', '')}`;
     let data = {
       className: this.componentName,
-      name: this.componentName.toLowerCase(),
-      file: `/${core.formatFileName(this.componentName).replace('/component/g', '')}`,
+      moduleName: name,
+      url: core.upperCaseFirst(core.namePath(this.modulePath)).toLowerCase(),
+      componentTagName: core.camelCase(name),
+      file: `/${name}`,
       style: this.optStyle,
       filePath: `app/${this.modulePath}`
     };

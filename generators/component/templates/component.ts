@@ -1,4 +1,4 @@
-<% if(style){ %>import './<%= name %>.component.scss';
+<% if(style){ %>import './<%= moduleName %>.component.scss';
 
 <% } %>export const <%= className %>Component = {
   templateUrl: '<%= filePath %><%= file %>.component.html',

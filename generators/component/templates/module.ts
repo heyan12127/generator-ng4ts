@@ -3,16 +3,16 @@ import * as angular from 'angular';
 import { <%= className %>Component } from '.<%= file %>.component';
 
 export const <%= className %>Module = angular
-  .module('<%= name %>', [
+  .module('<%= moduleName %>', [
     'ui.router'
   ])
-  .component('<%= name %>', <%= className %>Component)
+  .component('<%= componentTagName %>', <%= className %>Component)
   .config($stateProvider => {
     'ngInject';
     $stateProvider
-      .state('<%= name %>', {
-        url: '/<%= name %>',
-        component: '<%= name %>'
+      .state('<%= url %>', {
+        url: '/<%= url %>',
+        component: '<%= componentTagName %>'
       });
   })
   .name;
