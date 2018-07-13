@@ -27,7 +27,7 @@ module.exports = class extends Generator {
         .pop()
         .indexOf('Service') > -1;
     if (hasservice) {
-      this.modulePath = this.modulePath.replace(/[s, S]ervice/g, '');
+      this.modulePath = this.modulePath.replace(/\/(.-?)?[s, S]ervice/g, '');
     }
     this.serviceName = core.upperCaseFirst(core.namePath(this.modulePath));
   }
